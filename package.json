@@ -2,6 +2,11 @@
   "name": "meteor-em",
   "version": "0.1.0",
   "description": "A command line tool for scaffolding Meteor applications.",
+  "homepage": "https://github.com/EventedMind/em",
+  "bugs": {
+    "url": "https://github.com/EventedMind/em/issues",
+    "email": "chris@eventedmind.com"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
