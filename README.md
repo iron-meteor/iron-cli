@@ -15,7 +15,7 @@ $ npm install -g meteor-em
 
 ## Pre-Reqs
 
-You'll want to have (Iron Router)[https://github.com/eventedmind/iron-router]
+You'll want to have [Iron Router](https://github.com/eventedmind/iron-router)
 installed. Also, this command line tool just handles scaffolding for now. `mrt`
 and `meteor` are different command line tools. Hopefully, sometime in the near
 future we can enhance the `meteor` command line tool to be pluggable!
