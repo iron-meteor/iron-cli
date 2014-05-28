@@ -1,3 +1,6 @@
+# Note: experiential branch for config file
+![alt text](em.gif)
+
 # em
 
 A command line scaffolding tool for Meteor applications. It automatically
