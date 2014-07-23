@@ -14,11 +14,13 @@
   "license": "MIT",
   "dependencies": {
     "cli-color": "0.2.3",
-    "minimist": "0.0.8",
-    "underscore": "1.3.3",
     "cli-table": "0.3.0",
     "ejs": "0.8.5",
-    "fibers": "1.0.1"
+    "fibers": "1.0.1",
+    "minimist": "0.0.8",
+    "progress": "1.1.7",
+    "single-line-log": "0.4.1",
+    "underscore": "1.3.3"
   },
   "bin": {
     "em": "./bin/em.js"
