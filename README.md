@@ -30,7 +30,7 @@ You can initialize your project structure like this:
 ```sh
 $ em init
 ```
-A config file will be generated for your project — `.em/config.json`, and you will
+A config file will be generated in your project — `.em/config.json`, and you will
 be able to specify what types of files will be created for you when you generate
 a view resource. You can also specify alternative file extensions, e.g. .jade, .sass, and .coffee:
 ```json
