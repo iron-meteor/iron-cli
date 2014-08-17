@@ -55,7 +55,7 @@ a view resource. You can also specify alternative file extensions, e.g. .jade, .
 
 ### Initializing with options
 
-When running ```em init``` you can also pass in options to save a  atime. 
+When running ```em init``` you can also pass in options to save some time.
 For example:
 
 ```sh
@@ -63,7 +63,7 @@ $ em init --ir --css=false --js=coffee
 ```
 This will install [Iron Router](https://github.com/eventedmind/iron-router), set css file creation to false (css files will not be created when generating a new view), and set your preferred js file extensions to .coffee.
 
-Note: ```--css=less``` or ```--css=sass``` will change css file extensions to .less and .scss respectively. 
+Note: ```--css=less``` or ```--css=sass``` will change css file extensions to .less and .scss respectively.
 
 
 
