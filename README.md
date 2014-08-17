@@ -30,6 +30,7 @@ You can initialize your project structure like this:
 ```sh
 $ em init
 ```
+
 A config file will be generated in your project — `.em/config.json`, and you will
 be able to specify what types of files will be created for you when you generate
 a view resource. You can also specify alternative file extensions, e.g. .jade, .sass, and .coffee:
@@ -50,10 +51,23 @@ a view resource. You can also specify alternative file extensions, e.g. .jade, .
     }
   }
 }
-
 ```
 
-Then you can generate various resources. Here are a few examples:
+### Initializing with options
+
+When running ```em init``` you can also pass in options to save a  atime. 
+For example:
+
+```sh
+$ em init --ir --css=false --js=coffee
+```
+This will install [Iron Router](https://github.com/eventedmind/iron-router), set css file creation to false (css files will not be created when generating a new view), and set your preferred js file extensions to .coffee.
+
+Note: ```--css=less``` or ```--css=sass``` will change css file extensions to .less and .scss respectively. 
+
+
+
+Once your project is initialized and your config.json file is set up, you can begin generating various resources. Here are a few examples:
 
 ```sh
 $ em g:scaffold todos

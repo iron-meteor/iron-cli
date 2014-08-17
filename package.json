@@ -1,6 +1,6 @@
 {
   "name": "meteor-em",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "A command line tool for scaffolding Meteor applications.",
   "homepage": "https://github.com/EventedMind/em",
   "bugs": {
