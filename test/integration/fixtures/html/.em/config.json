@@ -1,0 +1,16 @@
+{
+  "view": {
+    "html": {
+      "create": true,
+      "extension": ".html"
+    },
+    "css": {
+      "create": false,
+      "extension": ".css"
+    },
+    "js": {
+      "create": false,
+      "extension": ".js"
+    }
+  }
+}
