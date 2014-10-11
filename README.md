@@ -5,6 +5,8 @@ creates project structure, files and boilerplate code. The project structure
 mimics that of the EventedMind publishing platform.
 
 ## Installation
+This branch is under development but can be installed using a devel tag:
+`npm install -g meteor-em@devel`
 
 Install the em command line tool globally so you can use it from any project
 directory.
