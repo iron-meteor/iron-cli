@@ -5,10 +5,10 @@ creates project structure, files and boilerplate code. The project structure
 mimics that of the EventedMind publishing platform.
 
 ## Installation
-This branch is under development and can be installed using a devel tag.
+This branch is under development and can be installed using a beta tag.
 
 ```sh
-$ npm install -g meteor-em@devel
+$ npm install -g meteor-em@0.2.1-beta.1
 ```
 
 ## Pre-Reqs
