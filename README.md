@@ -5,10 +5,10 @@ creates project structure, files and boilerplate code. The project structure
 mimics that of the EventedMind publishing platform.
 
 ## Installation
-This branch is under development and can be installed using a beta tag.
+Install the em command line tool globally so you can use it from any project directory.
 
 ```sh
-$ npm install -g meteor-em@0.2.1-beta.2
+$ npm install -g meteor-em
 ```
 
 ## Pre-Reqs
