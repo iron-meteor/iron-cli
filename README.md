@@ -78,5 +78,12 @@ $ em g:route todos/todo_show
 
 This is an early alpha project and any thoughts and contributions are welcome.
 
+## Tests
+
+To run tests
+```sh
+npm test
+```
+
 ## License
 MIT
