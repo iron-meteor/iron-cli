@@ -4,14 +4,10 @@
 Router.configure({
   layoutTemplate: 'MasterLayout',
   loadingTemplate: 'Loading',
-  notFoundTemplate: 'NotFound',
-  templateNameConverter: 'upperCamelCase',
-  routeControllerNameConverter: 'upperCamelCase'
+  notFoundTemplate: 'NotFound'
 });
 
-Router.map(function () {
-  /*
-    Example:
-      this.route('home', {path: '/'});
-  */
-});
+/*
+ *  Example:
+ *  Router.route('/', {name: 'home'});
+*/

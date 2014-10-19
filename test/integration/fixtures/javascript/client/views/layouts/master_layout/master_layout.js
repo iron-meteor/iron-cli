@@ -1,4 +1,3 @@
-
 /*****************************************************************************/
 /* MasterLayout: Event Handlers and Helpersss .js*/
 /*****************************************************************************/
@@ -31,5 +30,3 @@ Template.MasterLayout.rendered = function () {
 
 Template.MasterLayout.destroyed = function () {
 };
-
-

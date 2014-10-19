@@ -1,4 +1,3 @@
-
 /*****************************************************************************/
 /* NotFound: Event Handlers and Helpersss .js*/
 /*****************************************************************************/
@@ -31,5 +30,3 @@ Template.NotFound.rendered = function () {
 
 Template.NotFound.destroyed = function () {
 };
-
-

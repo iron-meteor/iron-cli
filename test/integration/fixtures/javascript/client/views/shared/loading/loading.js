@@ -1,4 +1,3 @@
-
 /*****************************************************************************/
 /* Loading: Event Handlers and Helpersss .js*/
 /*****************************************************************************/
@@ -31,5 +30,3 @@ Template.Loading.rendered = function () {
 
 Template.Loading.destroyed = function () {
 };
-
-
