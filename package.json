@@ -23,5 +23,13 @@
   },
   "bin": {
     "em": "./bin/em.js"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "chdir": "0.0.0",
+    "concat-stream": "^1.4.6",
+    "mkdirp": "^0.5.0",
+    "mocha": "^1.21.4",
+    "rimraf": "^2.2.8"
   }
 }
