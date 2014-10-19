@@ -31,6 +31,7 @@ module.exports = {
 
         var diff = spawn('diff', ['-u',
           '--ignore-all-space',
+          '-x', '.gitkeep',
           '-r',
           path.resolve('.', outFolder),
           path.resolve('.', fixtureFolder)]);
