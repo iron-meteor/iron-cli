@@ -29,7 +29,9 @@ module.exports = {
       em.stderr.pipe(process.stdout);
       em.on('close', function() {
 
-        var diff = spawn('diff', ['-r',
+        var diff = spawn('diff', ['-u',
+          '--ignore-all-space',
+          '-r',
           path.resolve('.', outFolder),
           path.resolve('.', fixtureFolder)]);
 
