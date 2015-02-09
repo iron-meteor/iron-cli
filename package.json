@@ -18,7 +18,7 @@
     "underscore": "1.3.3",
     "cli-table": "0.3.0",
     "ejs": "0.8.5",
-    "fibers": "1.0.1",
+    "fibers": "1.0.5",
     "single-line-log": "0.4.1"
   },
   "bin": {
