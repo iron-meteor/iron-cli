@@ -1,10 +1,10 @@
 {
-  "name": "meteor-em",
+  "name": "meteor-iron",
   "version": "0.2.5",
   "description": "A command line tool for scaffolding Meteor applications.",
-  "homepage": "https://github.com/EventedMind/em",
+  "homepage": "https://github.com/EventedMind/iron-cli",
   "bugs": {
-    "url": "https://github.com/EventedMind/em/issues",
+    "url": "https://github.com/EventedMind/iron-cli/issues",
     "email": "chris@eventedmind.com"
   },
   "scripts": {
@@ -22,7 +22,7 @@
     "single-line-log": "0.4.1"
   },
   "bin": {
-    "em": "./bin/em.js"
+    "iron": "./bin/iron.js"
   },
   "devDependencies": {
     "chai": "^1.9.1",
