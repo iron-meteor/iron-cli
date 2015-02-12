@@ -1,0 +1,16 @@
+{
+  "template": {
+    "html": {
+      "create": true,
+      "engine": "html"
+    },
+    "css": {
+      "create": true,
+      "engine": "css"
+    },
+    "js": {
+      "create": true,
+      "engine": "js"
+    }
+  }
+}
