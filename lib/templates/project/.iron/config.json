@@ -1,16 +1,13 @@
 {
+  "engines": {
+    "html": "<%= config.engines.html %>",
+    "js": "<%= config.engines.js %>",
+    "css": "<%= config.engines.css %>"
+  },
+
   "template": {
-    "html": {
-      "create": true,
-      "engine": "html"
-    },
-    "css": {
-      "create": true,
-      "engine": "css"
-    },
-    "js": {
-      "create": true,
-      "engine": "js"
-    }
+    "html": <%= config.template.html %>,
+    "js": <%= config.template.js %>,
+    "css": <%= config.template.css %>
   }
 }
