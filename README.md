@@ -3,6 +3,11 @@
 A command line scaffolding tool for Meteor applications. It automatically
 creates project structure, files and boilerplate code.
 
+## Version
+Note: You are looking at a development version. To see what has been released,
+click the `branch` dropdown menu and choose the tag for the latest release. For
+example, for version 0.2.5 click `branch: master -> Tags -> 0.2.5`.
+
 ## Installation
 Install the iron command line tool globally so you can use it from any project directory.
 
