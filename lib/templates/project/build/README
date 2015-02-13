@@ -1,0 +1,4 @@
+Application production builds can go in this directory. To build your
+application for staging or production run this command:
+
+> iron build

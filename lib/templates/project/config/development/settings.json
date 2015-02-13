@@ -1,10 +1,6 @@
 {
-  // settings here will be available in the browser
-  // with Meteor.settings.public
   "public": {
   },
 
-  // settings here will only be available on the server
-  // with Meteor.settings
   "sample": "value"
 }
