@@ -1,82 +1,113 @@
 # iron
 
 A command line scaffolding tool for Meteor applications. It automatically
-creates project structure, files and boilerplate code. The project structure
-mimics that of the EventedMind publishing platform.
+creates project structure, files and boilerplate code.
 
 ## Installation
 Install the iron command line tool globally so you can use it from any project directory.
 
 ```sh
-$ npm install -g meteor-iron
+$ npm install -g iron-meteor
 ```
-
-## Pre-Reqs
-
-You'll want to have [Iron Router](https://github.com/eventedmind/iron-router)
-installed. Also, this command line tool just handles scaffolding for now. `mrt`
-and `meteor` are different command line tools. Hopefully, sometime in the near
-future we can enhance the `meteor` command line tool to be pluggable!
 
 ## Usage
 
-Just type ```iron``` from the command line and you'll see the various top level
-commands. Then type ```iron generate``` or ```iron g``` to see a list of generators.
+Use the help command to get a list of the top level commands:
 
-You can initialize your project structure like this:
+```
+$ iron help
+```
+
+To see a list of generators.
+
+```
+$ iron g
+```
+
+## Commands
+
+### Create an Application
+```sh
+$ iron create my-app
+```
+
+The application will have the following directory structure:
 
 ```sh
-$ iron init
+my-app/
+ .iron/
+   config.json
+ bin/
+ build/
+ config/
+   development/
+     env.sh
+     settings.json
+ app/
+   client/
+     collections/
+     lib/
+     stylesheets/
+     templates/
+     head.html
+   lib/
+     collections/
+     controllers/
+     methods.js
+     routes.js
+   packages/
+   private/
+   public/
+   server/
+     collections/
+     controllers/
+     lib/
+     methods.js
+     publish.js
+     bootstrap.js
 ```
 
-A config file will be generated in your project — `.iron/config.json`, and you will
-be able to specify what types of files will be created for you when you generate
-a view resource. You can also specify alternative file extensions, e.g. .jade, .sass, and .coffee:
-```json
-{
-  "view": {
-    "html": {
-      "create": true,
-      "extension": ".html"
-    },
-    "css": {
-      "create": true,
-      "extension": ".css"
-    },
-    "js": {
-      "create": true,
-      "extension": ".js"
-    }
-  }
-}
-```
-
-### Initializing with options
-
-When running ```iron init``` you can also pass in options to save some time.
-For example:
+### Run your Application
 
 ```sh
-$ iron init --ir --css=false --js=coffee
+$ iron run 
 ```
-This will install [Iron Router](https://github.com/eventedmind/iron-router), set css file creation to false (css files will not be created when generating a new view), and set your preferred js file extensions to .coffee.
 
-Note: ```--css=less``` or ```--css=sass``` will change css file extensions to .less and .scss respectively.
+This will automatically load your config/<env>/env.sh and settings.json file.
 
+### Run the Application with a Different Environment
 
+```sh
+$ iron run --env staging
+```
 
-Once your project is initialized and your config.json file is set up, you can begin generating various resources. Here are a few examples:
+This will use the config files in `config/staging` instead.
 
+### Build Your Application
+
+```sh
+$ iron build
+```
+
+This will build your application and put the resulting bundle into the project's
+build folder.
+
+### Generators
 ```sh
 $ iron g:scaffold todos
-$ iron g:view todos/todo_item
+$ iron g:template todos/todo_item
 $ iron g:controller webhooks/stripe --where "server"
-$ iron g:route todos/todo_show
+$ iron g:route todos/show_todo
+$ iron g:collection todos
+$ iron g:publish todos
+$ iron g:stylesheet main
 ```
 
-## Contributing
+### Meteor Commands
+Meteor commands will automatically be proxied to the meteor command line tool.
 
-This is an early alpha project and any thoughts and contributions are welcome.
+## Contributing
+Contributions and ideas are welcome.
 
 ## Tests
 
@@ -87,3 +118,7 @@ npm test
 
 ## License
 MIT
+
+## TODOS
+- Add engine templates for coffee, less, scss, jade, etc.
+
