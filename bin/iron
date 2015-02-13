@@ -3,10 +3,10 @@
 var Fiber = require('fibers');
 var argv = require('minimist')(process.argv.slice(2));
 var args = argv._;
-var em = require('../lib/em.js');
+var Iron = require('../lib/iron.js');
 
 global.IRON_COMMAND_PATH = __dirname;
 
 Fiber(function () {
-  em.run(args, argv);
+  Iron.run(args, argv);
 }).run();

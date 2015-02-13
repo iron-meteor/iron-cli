@@ -10,6 +10,32 @@ Install the iron command line tool globally so you can use it from any project d
 $ npm install -g iron-meteor
 ```
 
+**This replaces the `em` command line tool.**
+
+You can remove the meteor-em tool like this:
+
+```sh
+$ npm uninstall -g meteor-em
+```
+
+You can upgrade an existing project either by hande or by using the `migrate`
+command like this:
+
+**./my-app**
+```sh
+$ iron migrate
+```
+
+## Coffeescript Support
+I need help creating templates for coffeescript, less, scss, jade, etc. Please
+open an issue if you'd like to help on one of these!
+
+The reason is that I rewrote the way the command line tool works with different
+engines. But in doing so, I ran out of time to add back all the various engine
+templates. It's just a matter of adding the corresponding templates in each of
+the template folders. For example, if you have template.js, we need to create
+template.js.coffee.
+
 ## Usage
 
 Use the `help` command to get a list of the top level commands.
@@ -118,7 +144,3 @@ npm test
 
 ## License
 MIT
-
-## TODOS
-- Add engine templates for coffee, less, scss, jade, etc.
-

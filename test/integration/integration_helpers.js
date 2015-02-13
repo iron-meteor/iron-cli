@@ -7,7 +7,7 @@ var concat = require('concat-stream');
 var mkdirp = require('mkdirp').sync;
 
 module.exports = {
-  compare: function(fixtureName, emOptions, callback) {
+  compare: function(fixtureName, opts, callback) {
     var fixtureFolder = './test/integration/fixtures/' + fixtureName;
     if (!fs.existsSync((fixtureFolder))) {
       callback('Fixture ' + fixtureName + ' cannot be located at ' + fixtureFolder);
@@ -21,13 +21,13 @@ module.exports = {
     mkdirp(outFolder + '/.meteor');
     fs.appendFileSync(outFolder + '/.meteor/packages', '');
 
-    var emPath = path.resolve('.', 'bin/em.js');
+    var ironPath = path.resolve('.', 'bin/iron');
     chdir(outFolder, function() {
-      var opts = ['init', '--confirm'].concat(emOptions);
-      var em = spawn(emPath, opts);
+      var opts = ['init', '--confirm'].concat(opts);
+      var iron = spawn(ironPath, opts);
 
-      em.stderr.pipe(process.stdout);
-      em.on('close', function() {
+      iron.stderr.pipe(process.stdout);
+      iron.on('close', function() {
 
         var diff = spawn('diff', ['-u',
           '--ignore-all-space',

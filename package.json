@@ -1,6 +1,6 @@
 {
   "name": "iron-meteor",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "A command line tool for scaffolding Meteor applications.",
   "homepage": "https://github.com/iron-meteor/iron-cli",
   "bugs": {
