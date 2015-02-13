@@ -22,7 +22,7 @@
     "single-line-log": "0.4.1"
   },
   "bin": {
-    "iron": "./bin/iron.js"
+    "iron": "./bin/iron"
   },
   "devDependencies": {
     "chai": "^1.9.1",
