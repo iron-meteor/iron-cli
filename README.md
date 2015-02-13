@@ -12,13 +12,13 @@ $ npm install -g iron-meteor
 
 ## Usage
 
-Use the help command to get a list of the top level commands:
+Use the `help` command to get a list of the top level commands.
 
 ```
 $ iron help
 ```
 
-To see a list of generators.
+Use the `g` command to see a list of generators.
 
 ```
 $ iron g
@@ -73,7 +73,7 @@ my-app/
 $ iron run 
 ```
 
-This will automatically load your config/<env>/env.sh and settings.json file.
+This will automatically load your config/development/env.sh and config/development/settings.json files.
 
 ### Run the Application with a Different Environment
 
