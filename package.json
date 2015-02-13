@@ -1,10 +1,10 @@
 {
-  "name": "meteor-iron",
-  "version": "0.2.5",
+  "name": "iron-meteor",
+  "version": "0.3.0",
   "description": "A command line tool for scaffolding Meteor applications.",
-  "homepage": "https://github.com/EventedMind/iron-cli",
+  "homepage": "https://github.com/iron-meteor/iron-cli",
   "bugs": {
-    "url": "https://github.com/EventedMind/iron-cli/issues",
+    "url": "https://github.com/iron-meteor/iron-cli/issues",
     "email": "chris@eventedmind.com"
   },
   "scripts": {
