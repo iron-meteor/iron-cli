@@ -119,6 +119,14 @@ This will use the config files in `config/staging` instead.
 ```sh
 $ iron build
 ```
+### Deploy your app on Heroku
+
+Iron projects require buildpacks to look for the app in /app/ in addition to the root for deployments to work. Currently there is a patched version of the Horse buildpack available that is compatible with Iron based projects. Use this fork until the patches has been added to the main Horse repo.
+
+```sh
+$ heroku config:set BUILDPACK_URL=https://github.com/lirbank/meteor-buildpack-horse.git
+```
+
 
 This will build your application and put the resulting bundle into the project's
 build folder.
