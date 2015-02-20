@@ -20,7 +20,7 @@
     "ejs": "0.8.5",
     "fibers": "1.0.1",
     "single-line-log": "0.4.1",
-    "node-env-file": "0.1.6"
+    "dotenv": "0.5.1"
   },
   "bin": {
     "iron": "./bin/iron"
