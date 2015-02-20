@@ -20,7 +20,8 @@
     "ejs": "0.8.5",
     "fibers": "1.0.1",
     "single-line-log": "0.4.1",
-    "dotenv": "0.5.1"
+    "shell-source": "1.0.1",
+    "xtend": "^4.0.0"
   },
   "bin": {
     "iron": "./bin/iron"
