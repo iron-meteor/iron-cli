@@ -9,5 +9,12 @@
     "html": <%= config.template.html %>,
     "js": <%= config.template.js %>,
     "css": <%= config.template.css %>
+  },
+
+  "generators": {
+    "route": {
+      "controller": true,
+      "template": true
+    }
   }
 }
