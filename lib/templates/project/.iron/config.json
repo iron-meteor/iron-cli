@@ -13,8 +13,8 @@
 
   "generators": {
     "route": {
-      "controller": true,
-      "template": true
+      "controller": <%= config.generators.route.controller %>,
+      "template": <%= config.generators.route.template %>
     }
   }
 }
