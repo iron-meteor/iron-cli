@@ -11,10 +11,8 @@
     "css": <%= config.template.css %>
   },
 
-  "generators": {
-    "route": {
-      "controller": <%= config.generators.route.controller %>,
-      "template": <%= config.generators.route.template %>
-    }
+  "route": {
+    "controller": <%= config.route.controller %>,
+    "template": <%= config.route.template %>
   }
 }
