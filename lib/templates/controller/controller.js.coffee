@@ -1,4 +1,4 @@
-<%= name %>Controller = RouteController.extend(
+@<%= name %>Controller = RouteController.extend(
   subscriptions: ->
     # set up the subscriptions for the route and optionally
     # wait on them like this:
