@@ -1,4 +1,3 @@
-
 1.1.0 / 2015-03-09
 ==================
   * update package version to 1.1.0
@@ -12,3 +11,4 @@
   * updated fibers to 1.0.5
   * fix coffeescript collection.js.coffee template
   * Update README.md
+  * add authors file
