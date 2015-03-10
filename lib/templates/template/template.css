@@ -1,2 +1,2 @@
-.<%= className %>-template {
+.template-<%= className %> {
 }
