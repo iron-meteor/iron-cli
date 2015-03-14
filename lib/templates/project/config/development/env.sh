@@ -3,7 +3,7 @@
 # to the server side of your app by using process.env.MY_VAR
 #
 # Example:
-# export MONGO_URL="mongodb://localhost:27017/myapp-development"
-# export ROOT_URL="http://localhost:3000"
+# MONGO_URL="mongodb://localhost:27017/myapp-development"
+# ROOT_URL="http://localhost:3000"
 
-export SAMPLE_VARIABLE="somevalue"
+SAMPLE_VARIABLE="somevalue"
