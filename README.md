@@ -109,7 +109,7 @@ This will automatically load your config/development/env.sh and config/developme
 ### Run the Application with a Different Environment
 
 ```sh
-$ iron run --env staging
+$ iron run --env=staging
 ```
 
 This will use the config files in `config/staging` instead.
