@@ -114,6 +114,12 @@ $ iron run --env=staging
 
 This will use the config files in `config/staging` instead.
 
+### Debug Your Application 
+
+```sh
+$ iron debug
+```
+
 ### Build Your Application
 
 ```sh
