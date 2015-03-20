@@ -1,3 +1,14 @@
+1.1.2 / 2015-03-20
+==================
+  * fix 100% cpu when invoking meteor commands
+  * fix environment switching example
+  * add debug instruction example in readme
+  * update CoffeeScript Template's template to include lifecycle methods
+  * fix environment switching example
+  * add CSS block comments
+  * add CoffeeScript routes to migration command
+  * fix scaffold route generator conflict
+
 1.1.1 / 2015-03-10
 ==================
 
