@@ -125,6 +125,9 @@ $ iron debug
 ```sh
 $ iron build
 ```
+
+This will automatically load your config/development/env.sh and config/development/settings.json files.
+
 ### Deploy Your Application on Heroku
 
 Iron projects require buildpacks to look for the app in /app/ in addition to the root for deployments to work. Currently there is a patched version of the Horse buildpack available that is compatible with Iron based projects. Use this fork until the patches has been added to the main Horse repo.
