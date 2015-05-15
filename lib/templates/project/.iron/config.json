@@ -14,5 +14,10 @@
   "route": {
     "controller": <%= config.route.controller %>,
     "template": <%= config.route.template %>
+  },
+
+  "mup": {
+    "development": "/deploy/development",
+    "production": "/deploy/production"
   }
 }
