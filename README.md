@@ -27,7 +27,6 @@ $ iron migrate
 ```
 
 ## Usage
-
 Use the `help` command to get a list of the top level commands.
 
 ```
@@ -41,7 +40,6 @@ $ iron g
 ```
 
 ## Directory Structure
-
 The application will have the following directory structure:
 
 ```sh
@@ -97,7 +95,6 @@ $ iron create my-app
 ```
 
 The following parameters can be specified:
-
 ```
 --css=css|scss|less
 --js=js|coffee|next.js
@@ -115,7 +112,6 @@ The following parameters can be specified:
 *Implementing complete customization and configuration is high on the development priority list. See the [Github issue](https://github.com/iron-meteor/iron-cli/issues/53) if you'd like to contribute.*
 
 ### Run Your Application
-
 ```sh
 $ iron run
 ```
@@ -123,7 +119,6 @@ $ iron run
 This will automatically load your config/development/env.sh and config/development/settings.json files.
 
 ### Run the Application with a Different Environment
-
 ```sh
 $ iron run --env=staging
 ```
@@ -131,13 +126,11 @@ $ iron run --env=staging
 This will use the config files in `config/staging` instead.
 
 ### Debug Your Application
-
 ```sh
 $ iron debug
 ```
 
 ### Build Your Application
-
 ```sh
 $ iron build
 ```
@@ -148,7 +141,6 @@ $ iron build
 [Meteor Up](https://github.com/arunoda/meteor-up) is a command line tool to deploy any Meteor app to your own server.
 
 #### Configure Meteor Up
-
 The following configuration options are supported in `config.json`:
 
 ```
@@ -160,7 +152,6 @@ The following configuration options are supported in `config.json`:
 ```
 
 #### Initialize Meteor Up
-
 Use `iron mup` to run Meteor Up commands. To create a `mup.json` file for an environment run:
 
 ```sh
@@ -171,9 +162,7 @@ iron mup <environment> --init
 
 Your `mup.json` file must contain `"enableUploadProgressBar": false` to work with Iron.
 
-
 #### Create Meteor Up Server
-
 After [configuring](https://github.com/arunoda/meteor-up/#example-file) `mup.json`, the server can be bootstrapped with a single command:
 
 ```sh
@@ -189,9 +178,7 @@ iron mup <environment> --setup
   'iron mup <custom-from-config>'
 ```
 
-
 ### Deploy Your Application on Heroku
-
 Iron projects require buildpacks to look for the app in /app/ in addition to the root for deployments to work. Currently there is a patched version of the Horse buildpack available that is compatible with Iron based projects. Use this fork until the patches has been added to the main Horse repo.
 
 ```sh
@@ -200,7 +187,6 @@ $ heroku config:set BUILDPACK_URL=https://github.com/lirbank/meteor-buildpack-ho
 
 This will build your application and put the resulting bundle into the project's
 build folder.
-
 
 ## Meteor Commands
 Meteor commands will automatically be proxied to the meteor command line tool.
