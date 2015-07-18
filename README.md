@@ -3,11 +3,6 @@
 A command line scaffolding tool for Meteor applications. It automatically
 creates project structure, files and boilerplate code.
 
-## Version
-Note: You are looking at a development version. To see what has been released,
-click the `branch` dropdown menu and choose the tag for the latest release. For
-example, for version 0.2.5 click `branch: master -> Tags -> 0.2.5`.
-
 ## Installation
 Install the iron command line tool globally so you can use it from any project directory.
 
@@ -31,16 +26,6 @@ command like this:
 $ iron migrate
 ```
 
-## Coffeescript Support
-I need help creating templates for coffeescript, less, scss, jade, etc. Please
-open an issue if you'd like to help on one of these!
-
-The reason is that I rewrote the way the command line tool works with different
-engines. But in doing so, I ran out of time to add back all the various engine
-templates. It's just a matter of adding the corresponding templates in each of
-the template folders. For example, if you have template.js, we need to create
-template.js.coffee.
-
 ## Usage
 
 Use the `help` command to get a list of the top level commands.
@@ -55,12 +40,7 @@ Use the `g` command to see a list of generators.
 $ iron g
 ```
 
-## Commands
-
-### Create an Application
-```sh
-$ iron create my-app
-```
+## Directory Structure
 
 The application will have the following directory structure:
 
@@ -98,10 +78,46 @@ my-app/
      bootstrap.js
 ```
 
+## Generators
+```sh
+$ iron g:scaffold todos
+$ iron g:template todos/todo_item
+$ iron g:controller webhooks/stripe --where "server"
+$ iron g:route todos/show_todo
+$ iron g:collection todos
+$ iron g:publish todos
+$ iron g:stylesheet main
+```
+
+## Commands
+
+### Create an Application
+```sh
+$ iron create my-app
+```
+
+The following parameters can be specified:
+
+```
+--css=css|scss|less
+--js=js|coffee|next.js
+--html=html|jade
+--skip-template-css=true|false
+--skip-template-js=true|false
+--skip-template-html=true|false
+--skip-iron-router
+--skip-route-controller
+--skip-route-template
+```
+
+**NOTE**
+
+*Implementing complete customization and configuration is high on the development priority list. See the [Github issue](https://github.com/iron-meteor/iron-cli/issues/53) if you'd like to contribute.*
+
 ### Run Your Application
 
 ```sh
-$ iron run 
+$ iron run
 ```
 
 This will automatically load your config/development/env.sh and config/development/settings.json files.
@@ -114,7 +130,7 @@ $ iron run --env=staging
 
 This will use the config files in `config/staging` instead.
 
-### Debug Your Application 
+### Debug Your Application
 
 ```sh
 $ iron debug
@@ -133,20 +149,8 @@ Iron projects require buildpacks to look for the app in /app/ in addition to the
 $ heroku config:set BUILDPACK_URL=https://github.com/lirbank/meteor-buildpack-horse.git
 ```
 
-
 This will build your application and put the resulting bundle into the project's
 build folder.
-
-### Generators
-```sh
-$ iron g:scaffold todos
-$ iron g:template todos/todo_item
-$ iron g:controller webhooks/stripe --where "server"
-$ iron g:route todos/show_todo
-$ iron g:collection todos
-$ iron g:publish todos
-$ iron g:stylesheet main
-```
 
 ### Meteor Commands
 Meteor commands will automatically be proxied to the meteor command line tool.
@@ -155,7 +159,6 @@ Meteor commands will automatically be proxied to the meteor command line tool.
 Contributions and ideas are welcome.
 
 ## Tests
-
 To run tests
 ```sh
 npm test
