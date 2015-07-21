@@ -125,7 +125,7 @@ $ iron run --env=staging
 
 This will use the config files in `config/staging` instead.
 
-### Debug Your Application
+### Debug Your Application on the Server Side
 ```sh
 $ iron debug
 ```
