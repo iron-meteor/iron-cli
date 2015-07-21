@@ -14,5 +14,6 @@
   "route": {
     "controller": <%= config.route.controller %>,
     "template": <%= config.route.template %>
-  }
+  },
+
 }
