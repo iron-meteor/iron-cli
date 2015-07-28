@@ -16,4 +16,7 @@
     "template": <%= config.route.template %>
   }
 
+  "generator": {
+    "comments": <%= config.generator.comments %>
+  }
 }

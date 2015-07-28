@@ -1,28 +1,56 @@
 <%= name %>Controller = RouteController.extend({
-  subscriptions: function () {
-    // set up the subscriptions for the route and optionally
-    // wait on them like this:
-    //
+  <% if (generator.comments) { %>
+    // a place to put your subscriptions
+    // this.subscribe('items');
+    // // add the subscription to the waitlist
     // this.subscribe('item', this.params._id).wait();
-    //
-    // "Waiting" on a subscription does not block. Instead,
-    // the subscription handle is added to a reactive list
-    // and when all items in this list are ready, this.ready()
-    // returns true in any of your route functions.
+  <% } %>
+  subscriptions: function() {
   },
 
+  <% if (generator.comments) { %>
+    // Subscriptions or other things we want to "wait" on. This also
+    // automatically uses the loading hook. That's the only difference between
+    // this option and the subscriptions option above.
+    // return Meteor.subscribe('post', this.params._id);
+  <% } %>
+  waitOn: function () {
+  },
+
+  <% if (generator.comments) { %>
+    // A data function that can be used to automatically set the data context for
+    // our layout. This function can also be used by hooks and plugins. For
+    // example, the "dataNotFound" plugin calls this function to see if it
+    // returns a null value, and if so, renders the not found template.
+    // return Posts.findOne({_id: this.params._id});
+  <% } %>
   data: function () {
-    // return a global data context like this:
-    // Items.findOne({_id: this.params._id});
   },
 
+  <% if (generator.comments) { %>
+    // You can provide any of the hook options
+  <% } %>
+  onRun: function () {
+  },
+  onRerun: function () {
+  },
+  onBeforeAction: function () {
+  },
+  onAfterAction: function () {
+  },
+  onStop: function () {
+  },
+
+  <% if (generator.comments) { %>
+    // The same thing as providing a function as the second parameter. You can
+    // also provide a string action name here which will be looked up on a Controller
+    // when the route runs. More on Controllers later. Note, the action function
+    // is optional. By default a route will render its template, layout and
+    // regions automatically.
+    // Example:
+    //  action: 'myActionFunction'
+  <% } %>
   action: function () {
-    // You can create as many action functions as you'd like.
-    // This is the primary function for running your route.
-    // Usually it just renders a template to a page. But it
-    // might also perform some conditional logic. Override
-    // the data context by providing it as an option in the
-    // last parameter.
-    this.render('<%= name %>', { /* data: {} */});
+    this.render();
   }
 });
