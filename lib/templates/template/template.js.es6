@@ -14,7 +14,6 @@ Template.<%= name %>.helpers({
 /* <%= name %>: Lifecycle Hooks */
 /*****************************************************************************/
 Template.<%= name %>.onCreated(function () {
-  var instance = Template
 });
 
 Template.<%= name %>.onRendered(function () {

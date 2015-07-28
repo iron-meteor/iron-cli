@@ -3,9 +3,8 @@ Template.<%= name %>.events {}
 Template.<%= name %>.helpers {}
 
 # <%= name %>: Lifecycle Hooks
-Template.<%= name %>.created = ->
+Template.<%= name %>.onCreated ->
 
-Template.<%= name %>.rendered = ->
+Template.<%= name %>.onRendered ->
 
-Template.<%= name %>.destroyed = ->
-
+Template.<%= name %>.onDestroyed ->
