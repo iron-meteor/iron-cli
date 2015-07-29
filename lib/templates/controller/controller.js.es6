@@ -31,14 +31,13 @@
     // You can provide any of the hook options
   <% } %>
   onRun: function () {
+    this.next();
   },
   onRerun: function () {
+    this.next();
   },
   onBeforeAction: function () {
-  },
-  onAfterAction: function () {
-  },
-  onStop: function () {
+    this.next();
   },
 
   <% if (generator.comments) { %>
@@ -52,5 +51,9 @@
   <% } %>
   action: function () {
     this.render();
+  },
+  onAfterAction: function () {
+  },
+  onStop: function () {
   }
 });

@@ -3,11 +3,13 @@
   waitOn: ->
   data: ->
   onRun: ->
+    @next()
   onRerun: ->
+    @next()
   onBeforeAction: ->
-  onAfterAction: ->
-  onStop: ->
+    @next()
   action: ->
     @render()
-    return
+  onAfterAction: ->
+  onStop: ->
 )
