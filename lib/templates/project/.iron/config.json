@@ -6,17 +6,17 @@
   },
 
   "template": {
-    "html": <%= config.template.html %>,
-    "js": <%= config.template.js %>,
-    "css": <%= config.template.css %>
+    "html": "<%= config.template.html %>",
+    "js": "<%= config.template.js %>",
+    "css": "<%= config.template.css %>"
   },
 
   "route": {
-    "controller": <%= config.route.controller %>,
-    "template": <%= config.route.template %>
-  }
+    "controller": "<%= config.route.controller %>",
+    "template": "<%= config.route.template %>"
+  },
 
   "generator": {
-    "comments": <%= config.generator.comments %>
+    "comments": "<%= config.generator.comments %>"
   }
 }

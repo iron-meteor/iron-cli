@@ -1,2 +1,2 @@
 Meteor.methods
-  'methodName': ->
+  '<%= name %>': ->

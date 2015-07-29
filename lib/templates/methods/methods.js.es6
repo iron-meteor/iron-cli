@@ -3,7 +3,7 @@
 /*****************************************************************************/
 
 Meteor.methods({
-  'methodName': function () {
+  '<%= name %>': function () {
     <% if (where !== 'server') { %>
     if (this.isSimulation) {
     //   // do some client stuff while waiting for
