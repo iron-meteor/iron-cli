@@ -1,5 +1,5 @@
 Router.route '<%= routePath %>',
   name: '<%= name %>'
   controller: '<%= controller %>'
-  action: '<%= action %>'
   where: '<%= where %>'
+  <% if (action !== 'action') { %>action: '<%= action %>'<% } %>
