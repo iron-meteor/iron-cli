@@ -97,7 +97,7 @@ $ iron create my-app
 The following parameters can be specified:
 ```
 --css=css|scss|less
---js=js|coffee|next.js
+--js=js|coffee|es6
 --html=html|jade
 --skip-template-css=true|false
 --skip-template-js=true|false
