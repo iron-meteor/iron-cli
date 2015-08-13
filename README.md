@@ -51,6 +51,7 @@ my-app/
  config/
    development/
      env.sh
+     exec.sh
      settings.json
  app/
    client/
@@ -116,7 +117,7 @@ The following parameters can be specified:
 $ iron run
 ```
 
-This will automatically load your config/development/env.sh and config/development/settings.json files.
+This will automatically load your config/development/env.sh and config/development/settings.json files and run exec.sh as a shell script.
 
 ### Run the Application with a Different Environment
 ```sh
