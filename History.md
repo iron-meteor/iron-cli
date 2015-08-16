@@ -1,3 +1,8 @@
+1.2.2 / 2015-08-16
+==================
+  * better handling for passing --env and other params to iron run
+  * update underscore version
+
 1.2.1 / 2015-08-16
 ==================
   * update to fibers 1.0.6
