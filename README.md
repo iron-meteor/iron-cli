@@ -69,7 +69,6 @@ my-app/
    public/
    server/
      collections/
-     controllers/
      lib/
      methods.js
      publish.js
@@ -80,9 +79,10 @@ my-app/
 ```sh
 $ iron g:scaffold todos
 $ iron g:template todos/todo_item
-$ iron g:controller webhooks/stripe --where "server"
-$ iron g:route todos/show_todo
 $ iron g:collection todos
+$ iron g:route webhooks/stripe --where "server"
+$ iron g:controller todos/show_todo
+$ iron g:route todos/show_todo --action "show"
 $ iron g:publish todos
 $ iron g:stylesheet main
 ```

@@ -1,3 +1,21 @@
+1.2.2 / 2015-08-16
+==================
+  * better handling for passing --env and other params to iron run
+  * update underscore version
+
+1.2.1 / 2015-08-16
+==================
+  * update to fibers 1.0.6
+  * controller generator shouldn't bomb if settings aren't found
+  * next.js -> es6
+  * remove server-only controller generation for now
+  * pass controller name when generating route
+
+1.2.0 / 2015-07-28
+==================
+  * buxfixes
+  * refactoring
+
 1.1.2 / 2015-03-20
 ==================
   * fix 100% cpu when invoking meteor commands
