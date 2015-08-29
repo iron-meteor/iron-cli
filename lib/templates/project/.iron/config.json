@@ -18,5 +18,9 @@
 
   "generator": {
     "comments": "<%= config.generator.comments %>"
+  },
+
+  "run": {
+    "env": "<%= config.run.env %>"
   }
 }
