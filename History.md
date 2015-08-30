@@ -1,3 +1,8 @@
+1.3.0 / 2015-08-29
+==================
+  * don't source env.sh on windows
+  * better integration for iron deploy command
+
 1.2.2 / 2015-08-16
 ==================
   * better handling for passing --env and other params to iron run
