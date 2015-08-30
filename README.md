@@ -105,6 +105,7 @@ The following parameters can be specified:
 --skip-iron-router
 --skip-route-controller
 --skip-route-template
+--skip-generator-comments
 ```
 
 **NOTE**
