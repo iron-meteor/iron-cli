@@ -1,3 +1,8 @@
+1.3.1 / 2015-09-1
+==================
+  * fix run error on windows
+  * template formatting fixes
+
 1.3.0 / 2015-08-29
 ==================
   * don't source env.sh on windows
