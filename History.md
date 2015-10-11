@@ -1,4 +1,9 @@
-1.3.1 / 2015-09-1
+1.4.1 / 2015-10-11
+==================
+  * add package generator
+  * windows fixes
+
+1.3.1 / 2015-09-01
 ==================
   * fix run error on windows
   * template formatting fixes
