@@ -87,6 +87,7 @@ $ iron g:controller todos/show_todo
 $ iron g:route todos/show_todo --action "show"
 $ iron g:publish todos
 $ iron g:stylesheet main
+$ iron g:package package:name
 ```
 
 ## Commands
