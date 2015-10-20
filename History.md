@@ -1,3 +1,7 @@
+1.5.0 / 2015-10-19
+==================
+  * better mup integration
+
 1.4.1 / 2015-10-11
 ==================
   * add package generator
