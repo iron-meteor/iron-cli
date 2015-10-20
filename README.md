@@ -149,9 +149,8 @@ The following configuration options are supported in `config.json`:
 
 ```
 "mup": {
-  "version": "mup|mupx",
-  "development": "/config/development",
-  "anyenv": "/any/folder"
+  "version": "mup" or "mupx",
+  "environment": "/path/to/environment"
 }
 ```
 
