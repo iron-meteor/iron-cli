@@ -139,6 +139,16 @@ $ iron debug
 $ iron build
 ```
 
+### Connect to MongoDB Database
+```sh
+$ cd app/
+$ meteor mongo
+```
+
+**NOTE** 
+
+*Ideally running `iron mongo` in the project directory should work but it doesn't for some reason and is being tracked in issue #136*
+
 ## Deployment
 
 ### Deploy Your Application with Meteor Up
