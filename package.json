@@ -1,8 +1,8 @@
 {
-  "name": "rps-iron-meteor",
-  "version": "1.5.8",
+  "name": "iron-meteor",
+  "version": "1.5.2",
   "description": "A command line tool for scaffolding Meteor applications.",
-  "homepage": "https://github.com/FBRTMaka/iron-cli",
+  "homepage": "https://github.com/iron-meteor/iron-cli",
   "bugs": {
     "url": "https://github.com/iron-meteor/iron-cli/issues",
     "email": "chris@eventedmind.com"
