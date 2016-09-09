@@ -14,13 +14,14 @@
   "license": "MIT",
   "dependencies": {
     "cli-color": "0.2.3",
-    "minimist": "0.0.8",
-    "underscore": "1.8.3",
     "cli-table": "0.3.0",
+    "delete": "^0.3.0",
     "ejs": "0.8.5",
     "fibers": "1.0.8",
-    "single-line-log": "0.4.1",
+    "minimist": "0.0.8",
     "shell-source": "1.1.0",
+    "single-line-log": "0.4.1",
+    "underscore": "1.8.3",
     "xtend": "^4.0.0"
   },
   "bin": {
