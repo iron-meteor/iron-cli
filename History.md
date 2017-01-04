@@ -1,3 +1,7 @@
+1.6.0 / 2017-1-4
+==================
+  * use meteor create --bare instead of deleting files
+
 1.5.5 / 2017-1-4
 ==================
   * use default meteor es6 support (remove babel)
