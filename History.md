@@ -1,3 +1,7 @@
+1.6.1 / 2017-1-4
+==================
+  * add method for meteor npm install
+
 1.6.0 / 2017-1-4
 ==================
   * use meteor create --bare instead of deleting files
