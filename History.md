@@ -1,3 +1,7 @@
+1.5.5 / 2017-1-4
+==================
+  * use default meteor es6 support (remove babel)
+
 1.5.4 / 2017-1-4
 ==================
   * fibers fixes
