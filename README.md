@@ -41,6 +41,12 @@ Use the `g` command to see a list of generators.
 $ iron g
 ```
 
+**Run Iron in verbose mode (extended logging)**
+
+```
+$ IRON_DEBUG=true iron
+```
+
 ## Directory Structure
 The application will have the following directory structure:
 
@@ -145,7 +151,7 @@ $ cd app/
 $ meteor mongo
 ```
 
-**NOTE** 
+**NOTE**
 
 *Ideally running `iron mongo` in the project directory should work but it doesn't for some reason and is being tracked in issue #136*
 
