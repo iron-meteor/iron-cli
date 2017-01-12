@@ -1,3 +1,8 @@
+1.8.0 / 2017-1-12
+==================
+  * Add verbose mode with IRON_DEBUG
+  * Fix file/path handling
+
 1.7.0 / 2017-1-12
 ==================
   * fix command proxying (debug, shell, mongo, etc)
