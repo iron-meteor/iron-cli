@@ -1,3 +1,7 @@
+1.7.0 / 2017-1-12
+==================
+  * fix command proxying (debug, shell, mongo, etc)
+
 1.6.1 / 2017-1-4
 ==================
   * add method for meteor npm install
