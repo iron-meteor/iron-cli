@@ -1,2 +1,2 @@
 Meteor.publish '<%= name %>', ->
-  <%= collection %>.find()
+  <%= collection %>.find(/* args */)
